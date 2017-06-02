@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="bottom"
+	android:background="@drawable/default_bg"
+	android:id="@+id/parent">
+	
+	<!--顶部界面-->
+	<LinearLayout android:orientation="vertical" 
+		          android:layout_width="fill_parent" 
+		          android:layout_height="150dip"
+		          android:id="@+id/head"
+		          android:background="@drawable/bottom" 
+		          android:layout_weight="0.95">
+		<TextView android:id="@+id/TextView1" 
+		          android:layout_width="wrap_content" 
+			      android:layout_height="40dip"
+			      android:textColor="@color/black"
+			      android:text="AppInsight"
+			      android:textSize="24px"
+		></TextView>
+    </LinearLayout>
+	<!--动态显示界面-->
+	<LinearLayout android:orientation="vertical"
+		          android:layout_width="fill_parent"
+		          android:layout_height="fill_parent"
+		          android:id="@+id/body"
+		          android:gravity="top"
+		          android:layout_weight="0.95">
+    </LinearLayout>
+	<!--底部功能菜单栏  -->
+	<LinearLayout  
+	             android:id="@+id/bottomlist"
+		         android:orientation="horizontal" 
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content" 
+		         android:layout_weight="0.05"
+		         android:background="@drawable/top" 
+		         >		 
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			          android:orientation="vertical" 
+			          android:layout_width="wrap_content"
+			          android:layout_height="fill_parent" 
+			          android:id="@+id/one"
+		              android:layout_weight="5" 
+		              android:gravity="center_horizontal">
+			<ImageView android:background="@drawable/bg_tab_call_log_pressed" 
+			           android:layout_gravity="top|center" 
+			           android:layout_height="35dp" 
+			           android:layout_width="32dp" 
+			           android:layout_marginTop="4dp"/>
+			<TextView  android:layout_width="wrap_content"
+				       android:layout_height="20dp" 
+				       android:text="one"
+				       android:textSize="16dip"
+				       android:textColor="@color/black"
+				       android:layout_marginBottom="8dp"	
+				/>
+		</LinearLayout> 
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			          android:orientation="vertical" 
+			          android:layout_width="wrap_content"
+			          android:layout_height="fill_parent" 
+			          android:id="@+id/two"  
+			          android:layout_weight="5" 
+			          android:gravity="center_horizontal">
+			<ImageView android:background="@drawable/bg_tab_contact_pressed" 
+			           android:layout_gravity="top|center" 
+			           android:layout_height="35dp" 
+			           android:layout_width="32dp" 
+			           android:layout_marginTop="4dp"/>
+			<TextView android:layout_width="wrap_content"
+				      android:layout_height="20dp" 
+				      android:text="two"
+				      android:textSize="16dip"
+				      android:textColor="@color/black"
+				      android:layout_marginBottom="8dp"
+				/>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			          android:orientation="vertical" 
+			          android:layout_width="wrap_content"
+			          android:id="@+id/three" 
+			          android:layout_height="fill_parent"
+			          android:layout_weight="5" 
+			          android:gravity="center_horizontal">
+			<ImageView android:background="@drawable/bg_tab_dial_pressed" 
+			          android:layout_gravity="top|center" 
+			          android:layout_height="35dp" 
+			          android:layout_width="32dp" 
+			          android:layout_marginTop="4dp"
+			 />
+			<TextView android:layout_width="wrap_content"
+				      android:layout_height="20dp"
+			          android:text="three"
+			          android:textSize="16dip"
+				      android:textColor="@color/black"
+			          android:layout_marginBottom="8dp"
+			/>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			         android:orientation="vertical" 
+			         android:layout_width="wrap_content"
+			         android:id="@+id/four" 
+			         android:layout_height="fill_parent"
+			         android:layout_weight="5" 
+			         android:gravity="center_horizontal">
+			<ImageView android:background="@drawable/bg_tab_sms_pressed" 
+			         android:layout_gravity="top|center" 
+			         android:layout_height="35dp" 
+			         android:layout_width="32dp" 
+			         android:layout_marginTop="4dp"
+			   />
+			<TextView android:layout_width="wrap_content"
+				     android:layout_height="20dp" 
+				     android:text="four"
+				     android:textSize="16dip"
+				     android:textColor="@color/black"
+				     android:layout_marginBottom="8dp"
+				/>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:id="@+id/five"
+			android:layout_height="fill_parent"
+			android:layout_weight="5"
+			android:gravity="center_horizontal">
+			<ImageView android:background="@drawable/bg_tab_sms_pressed"
+				android:layout_gravity="top|center"
+				android:layout_height="35dp"
+				android:layout_width="32dp"
+				android:layout_marginTop="4dp"
+				/>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="20dp"
+				android:text="five"
+				android:textSize="16dip"
+				android:textColor="@color/black"
+				android:layout_marginBottom="8dp"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
